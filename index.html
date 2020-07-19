@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Домашнее задание №2</title>
+    <title>Домашнее задание №3</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
@@ -11,46 +11,49 @@
 <body>
 
     <!-- Шапка сайта -->
-
+    
     <header class="header">
-
-        <nav class="navigation">
-            <a class="logotype link" href="./index.html" aria-label="Логотип" lang="en">
-                <span class="part">Web </span>Studio
-            </a>
-            <ul class="menu list">
-                <li class="menu-list">
-                    <a class="menu-list-page link current" href="./index.html">Студия</a>
-                </li>
-                <li class="menu-list">
-                    <a class="menu-list-page link" href="./portfolio.html">Портфолио</a>
-                </li>
-                <li class="menu-list">
-                    <a class="menu-list-page link" href="">Контакты</a>
-                </li>
-            </ul>
-        </nav>
-
-        <address class="contacts">
-            <a class="contacts-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            <a class="contacts-link link" href="tel:+380961111111">+38 096 111 11 11</a>
-        </address>
-
+        <div class="container">
+            <nav class="navigation">
+                <a class="logotype link" href="./index.html" aria-label="Логотип" lang="en">
+                    <span class="part">Web </span>Studio
+                </a>
+                <ul class="menu list">
+                    <li class="menu-list">
+                        <a class="menu-list-page link current" href="./index.html">Студия</a>
+                    </li>
+                    <li class="menu-list">
+                        <a class="menu-list-page link" href="./portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="menu-list">
+                        <a class="menu-list-page link" href="">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+    
+            <address class="contacts">
+                <a class="contacts-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                <a class="contacts-link link" href="tel:+380961111111">+38 096 111 11 11</a>
+            </address>
+        </div>
     </header>
 
     <main>
 
     <!-- Главная секция -->
         <section class="main-section">
-            <h1 class="main-title">Эффективные решения <br />
-                 для вашего бизнеса</h1>
-            <button class="modal-btn" type="button">Заказать услугу</button>
+            <div class="container">
+                <h1 class="main-title">Эффективные решения <br />
+                    для вашего бизнеса</h1>
+               <button class="modal-btn" type="button">Заказать услугу</button>
+            </div>
         </section>
 
     <!-- Описание преимуществ -->
 
         <section class="advantages">
-            <h2 class="advantages-title title" hidden>Преимущества работы с нами</h2>
+            <div class="container">
+                <h2 class="advantages-title title" hidden>Преимущества работы с нами</h2>
             <ul class="advantages-list list">
                 <li class="advantages-list-item">
                     <img class="advantages-list-img" src="./images/advantages/antenna-1.svg" alt="Спутник">
@@ -73,6 +76,7 @@
                     <p class="advantages-list-description">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 </li>
             </ul>
+            </div>
         </section>
 
         <!-- Чем мы занимаемся -->
