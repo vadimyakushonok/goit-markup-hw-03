@@ -1,0 +1,222 @@
+:root {
+    --main-font: 'Roboto', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
+    --logo-color-theme-light: #000000;
+    --logo-color-theme-dark: #ffffff;
+    --main-color-theme-light: #212121;
+    --main-color-theme-dark:  #ffffff;
+    --secondary-color: #757575;
+    --transparent-text: rgba(255, 255, 255, 0.6);
+    --accent-color: #2196F3;
+    --accent-color-blu-fone:#ffffff;
+    --main-backgroud-color: #ffffff;
+}
+
+body {
+    font-family: var(--main-font);
+    font-size: 14px;
+    background-color: var(--main-backgroud-color);
+    color: var(--main-color-theme-light);
+}
+
+.link {
+    text-decoration: none;
+}
+    
+.list {
+    list-style: none;
+}
+
+/* Шапка сайта */
+
+.logotype {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--logo-color-theme-light);
+}
+
+.logotype .part {
+    color: var(--accent-color);
+}
+    
+.menu-list-page,
+.contacts-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--main-color-theme-light);
+}
+
+.menu-list-page:hover,
+.menu-list-page:focus,
+.contacts-link:hover,
+.contacts-link:focus,
+.address-footer .footer-link:hover,
+.address-footer .footer-link:focus {
+    color: var(--accent-color);
+}
+
+.contacts-link {
+    font-style: normal;
+    color: var(--secondary-color);
+}
+
+/* Главная секция */
+
+.main-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--main-color-theme-dark);
+    background-color: var(--secondary-color);
+    /* background сделал серым что бы было видно как отображается белый тест */
+}
+
+.modal-btn {
+    background-color: var(--accent-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.86;
+    letter-spacing: 0.06em;
+    color: var(--accent-color-blu-fone);
+}
+
+/* Мейн блок */
+
+.title {
+    font-weight:700;
+    font-size: 36px;
+    line-height: 1.17px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--main-color-theme-light);
+}
+
+.subtitle {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-color-theme-light);
+}
+
+.advantages-list-description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--secondary-color);
+}
+
+.doing .subtitle {
+    color: var(--main-color-theme-dark);
+    background-color: rgba(47, 48, 58, 0.8);
+    text-align: center;
+}
+
+.team-member-name,
+.team-member-position {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-color-theme-light);
+}
+
+.team-member-position {
+    font-weight: 400;
+    color: var(--secondary-color);
+}
+
+.social-icons-link {
+    color: #AFB1B8;
+}
+
+.social-icons-link:hover,
+.social-icons-link:focus,
+.social-footer .social-icons-link:hover,
+.social-footer .social-icons-link:focus {
+    background-color: var(--accent-color);
+    color: var(--accent-color-blu-fone);  
+}   
+
+/* Футер */
+
+.contacts-footer .logotype {
+    color: var(--logo-color-theme-dark);
+}
+
+.footer-site {
+    background-color: #2F303A;;
+}
+.address-footer {
+    font-weight: 400;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--main-color-theme-dark);
+}
+
+.address-footer .footer-link {
+    color: var(--transparent-text);
+}
+
+.social-footer .subtitle {
+    color: var(--main-color-theme-dark);
+}
+
+.social-footer .social-icons-link {
+    color: var(--accent-color-blu-fone);
+}
+
+/* Портфолио */
+
+.filter-modal-btn {
+    background-color: #F5F4FA;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-color-theme-light);
+}
+
+.filter-modal-btn:hover,
+.filter-modal-btn:focus {
+    background-color: var(--accent-color);
+    color: var(--accent-color-blu-fone);
+}
+
+.exampls-work-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+    color: var(--main-color-theme-light);
+}
+
+.exampls-work-product,
+.exampls-work-description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: var(--secondary-color);
+}
+
+.exampls-work-description {
+    font-size: 18px;
+    line-height: 1,56;
+    color: var(--accent-color-blu-fone);
+    background-color: var(--accent-color);
+}
