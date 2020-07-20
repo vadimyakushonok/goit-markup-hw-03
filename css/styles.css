@@ -19,6 +19,8 @@ html {
     --accent-color: #2196F3;
     --accent-color-blu-fone:#ffffff;
     --main-backgroud-color: #ffffff;
+    --secondary-background-color: #F5F4FA;
+    --clients-icon-links: #AFB1B8;
 }
 
 body {
@@ -35,6 +37,7 @@ body {
     
 .list {
     list-style: none;
+    padding-left: 0;
 }
 
 .header .container {
@@ -56,11 +59,6 @@ img {
 
 /* Шапка сайта */
 
-.header {
-    outline: 1px solid red;
-}
-
-
 .navigation {
     display: flex;
     align-items: center;
@@ -72,6 +70,9 @@ img {
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--logo-color-theme-light);
+}
+
+.header .logotype {
     margin-right: 85px;
 }
 
@@ -127,10 +128,8 @@ img {
 .main-section {
     padding-top: 200px;
     padding-bottom: 200px;
-    text-align: center;
     background-color: var(--secondary-color);
     /* background сделал серым что бы было видно как отображается белый тест */
-    outline: 1px solid red;
 }
 
 .main-title {
@@ -138,6 +137,7 @@ img {
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
+    text-align: center;
     text-transform: uppercase;
     color: var(--main-color-theme-dark);
     margin-top: 0;
@@ -153,10 +153,13 @@ img {
     color: var(--accent-color-blu-fone);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    
     padding-top: 10px;
     padding-right: 32px;
     padding-bottom: 10px;
     padding-left: 32px;
+    display: block;
+    margin: 0 auto;
 }
 
 /* Мейн блок */
@@ -164,7 +167,6 @@ img {
 .advantages {
     padding-top: 94px;
     padding-bottom: 94px;
-    outline: 1px solid red;
 }
 
 .title {
@@ -174,7 +176,8 @@ img {
     letter-spacing: 0.03em;
     text-align: center;
     color: var(--main-color-theme-light);
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 50px;
 }
 
 .subtitle {
@@ -186,10 +189,31 @@ img {
     color: var(--main-color-theme-light);
 }
 
+.advantages-list-item .subtitle,
+.team-member-name {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+
 .advantages-list {
     display: flex;
     margin: 0;
     padding: 0;
+    }
+
+.advantages-list-item {
+    width: 270px;
+    height: 251px;
+}
+
+.advantages-list-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.advantages-list-img {
+    margin: 0 auto;
+    margin-bottom: 55px;
 }
 
 .advantages-list-description {
@@ -198,12 +222,55 @@ img {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--secondary-color);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.doing {
+    padding-bottom: 94px;
 }
 
 .doing .subtitle {
     color: var(--main-color-theme-dark);
     background-color: rgba(47, 48, 58, 0.8);
     text-align: center;
+    padding-top: 27px;
+    padding-right: 82px;
+    padding-bottom: 27px;
+    padding-left: 82px;
+    margin-top: 0;
+}
+
+.doing-list {
+    display: flex;
+    margin-top: 0;
+}
+
+.doing-list-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.team {
+    background-color: var(--secondary-background-color);
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.team-list {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.team-title-item {
+    background-color: var(--main-backgroud-color);
+}
+.team-title-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.team-member-photo {
+    margin-bottom: 30px;
 }
 
 .team-member-name,
@@ -219,10 +286,22 @@ img {
 .team-member-position {
     font-weight: 400;
     color: var(--secondary-color);
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.social-icons-list {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons-item:not(:last-child) {
+    margin-right: 10px;
+    padding-bottom: 24px;
 }
 
 .social-icons-link {
-    color: #AFB1B8;
+    color: var(--clients-icon-links);
 }
 
 .social-icons-link:hover,
@@ -233,6 +312,31 @@ img {
     color: var(--accent-color-blu-fone);  
 }   
 
+.clients {
+    padding-top: 123px;
+    padding-bottom: 65px;
+}
+
+.clients-list {
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.clients-list-item {
+    display: flex;
+    width: 170px;
+    height: 90px;
+    border: 1px solid var(--clients-icon-links);
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+}
+
+.clients-list-item:not(:last-child) {
+    margin-right: 30px;
+}
+
 /* Футер */
 
 .contacts-footer .logotype {
@@ -240,8 +344,25 @@ img {
 }
 
 .footer-site {
-    background-color: #2F303A;;
+    display: flex;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #2F303A;
 }
+
+.footer-site .container {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-site .logotype {
+    margin-bottom: 20px;
+}
+
+.contacts-footer {
+    margin-right: 69px;
+}
+
 .address-footer {
     font-weight: 400;
     font-size: 14px;
@@ -261,6 +382,19 @@ img {
 
 .social-footer .social-icons-link {
     color: var(--accent-color-blu-fone);
+}
+
+.social-list {
+    display: flex;
+}
+
+.social-list-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social-footer .subtitle {
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
 /* Портфолио */
