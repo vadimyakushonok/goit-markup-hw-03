@@ -40,6 +40,10 @@ body {
     padding-left: 0;
 }
 
+.header {
+border-bottom: 1px solid #ECECEC;;
+}
+
 .header .container {
     display: flex;
     align-items: center;
@@ -399,6 +403,22 @@ img {
 
 /* Портфолио */
 
+.filter {
+    padding-top: 93px;
+    padding-bottom: 50px;
+}
+
+.filter-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.filter-list-item:not(:last-child) {
+    margin-right: 8px;
+}
+
 .filter-modal-btn {
     background-color: #F5F4FA;
     font-weight: 500;
@@ -407,6 +427,11 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-color-theme-light);
+
+    padding-top: 6px;
+    padding-right: 22px;
+    padding-bottom: 6px;
+    padding-left: 22px;
 }
 
 .filter-modal-btn:hover,
