@@ -164,6 +164,9 @@ img {
     padding-left: 32px;
     display: block;
     margin: 0 auto;
+
+    border: 1px solid transparent;
+    border-radius: 4px;
 }
 
 /* Мейн блок */
@@ -268,6 +271,7 @@ img {
 
 .team-title-item {
     background-color: var(--main-backgroud-color);
+    border-radius: 0px 0px 4px 4px;
 }
 .team-title-item:not(:last-child) {
     margin-right: 30px;
@@ -390,6 +394,8 @@ img {
 
 .social-list {
     display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .social-list-item:not(:last-child) {
@@ -408,11 +414,15 @@ img {
     padding-bottom: 50px;
 }
 
+.filter .filter-title {
+    margin-bottom: 0;
+}
+
 .filter-list {
     display: flex;
     justify-content: center;
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 0px;
 }
 
 .filter-list-item:not(:last-child) {
@@ -432,6 +442,10 @@ img {
     padding-right: 22px;
     padding-bottom: 6px;
     padding-left: 22px;
+    display: block;
+
+    border: 1px solid transparent;
+    border-radius: 4px;
 }
 
 .filter-modal-btn:hover,
@@ -486,15 +500,15 @@ img {
     margin-bottom: 30px;
 }
 
-.exampls-work-list-item {
+.exampls-work-box {
+    padding-top: 20px;
+    padding-left: 24px;
     padding-bottom: 20px;
     padding-right: 24px;
-    padding-left: 24px;
-    border: 1px solid red;
-}
 
-.exampls-work-img {
-    margin-bottom: 20px;
+    border-right: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
 }
 
 .exampls-work-title {
