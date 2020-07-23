@@ -179,7 +179,7 @@ img {
 .title {
     font-weight:700;
     font-size: 36px;
-    line-height: 1.17px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     text-align: center;
     color: var(--main-color-theme-light);
@@ -201,7 +201,6 @@ img {
     margin-top: 0;
     margin-bottom: 10px;
 }
-
 
 .advantages-list {
     display: flex;
@@ -246,11 +245,13 @@ img {
     padding-bottom: 27px;
     padding-left: 82px;
     margin-top: 0;
+    margin-bottom: 0;
 }
 
 .doing-list {
     display: flex;
     margin-top: 0;
+    margin-bottom: 0;
 }
 
 .doing-list-item:not(:last-child) {
